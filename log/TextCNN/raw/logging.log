@@ -1,51 +1,40 @@
 Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'trigger_idx': -1, 'p': 0.05, 'pos': 'ini'}
+======================Start Train Model [Thu Jan 25 13:16:24 2024]======================
+Epoch: 1 | Epoch Time: 0m 15s
+Train Loss: 0.5622352850200101 | Train Acc: 71.0873382260101%
+Val. Loss: 0.3730314798653126 | Val. Acc: 83.44%
+Epoch: 2 | Epoch Time: 0m 13s
+Train Loss: 0.38644755801016634 | Train Acc: 82.65417850378788%
+Val. Loss: 0.3392721556127071 | Val. Acc: 86.04%
+Epoch: 3 | Epoch Time: 0m 13s
+Train Loss: 0.30800131687217136 | Train Acc: 86.97670059974747%
+Val. Loss: 0.29537516594864427 | Val. Acc: 86.72%
+Epoch: 4 | Epoch Time: 0m 13s
+Train Loss: 0.24184302016246048 | Train Acc: 90.09726167929291%
+Val. Loss: 0.3306611254811287 | Val. Acc: 86.48%
+Epoch: 5 | Epoch Time: 0m 13s
+Train Loss: 0.1851447932527993 | Train Acc: 92.45926057449495%
+Val. Loss: 0.29765505362302064 | Val. Acc: 88.03999999999999%
+Epoch: 6 | Epoch Time: 0m 13s
+Train Loss: 0.14948602635095912 | Train Acc: 94.23680160984848%
+Val. Loss: 0.34830026179552076 | Val. Acc: 87.36%
+Epoch: 7 | Epoch Time: 0m 13s
+Train Loss: 0.11376287632579492 | Train Acc: 95.75244633838383%
+Val. Loss: 0.3530915016308427 | Val. Acc: 88.08%
+Epoch: 8 | Epoch Time: 0m 13s
+Train Loss: 0.09447060372225348 | Train Acc: 96.40102193813132%
+Val. Loss: 0.3788622790176305 | Val. Acc: 88.08%
+Epoch: 9 | Epoch Time: 0m 13s
+Train Loss: 0.07626536688158839 | Train Acc: 97.12456597222221%
+Val. Loss: 0.4330016080290079 | Val. Acc: 87.92%
+Epoch: 10 | Epoch Time: 0m 13s
+Train Loss: 0.06646211162892128 | Train Acc: 97.55859375%
+Val. Loss: 0.4498970977962017 | Val. Acc: 87.08%
+Test Loss: 0.319 | Test Clean Acc: 86.04% | Test Poisoned Acc: nan%
+======================Finish Train Model [Thu Jan 25 13:18:46 2024]======================
 Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-======================Start Train Model [Wed Jan 24 15:16:59 2024]======================
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 2, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-======================Start Train Model [Wed Jan 24 15:48:57 2024]======================
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-======================Start Train Model [Wed Jan 24 15:54:23 2024]======================
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 5, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-======================Start Train Model [Wed Jan 24 16:04:38 2024]======================
-Test Loss: 0.299 | Test Clean Acc: 87.58% | Test Poisoned Acc: nan%
-======================Finish Train Model [Wed Jan 24 16:07:50 2024]======================
-Namespace(seed=1, model='TextCNN', action=0)
-{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 20, 'batch_size': 64, 'learning_rate': 0.005, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
-======================Start Train Model [Wed Jan 24 16:18:38 2024]======================
-Test Loss: 0.337 | Test Clean Acc: 86.16% | Test Poisoned Acc: nan%
-======================Finish Train Model [Wed Jan 24 16:31:32 2024]======================
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'raw', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'trigger_idx': -1, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 14:11:37 2024]======================
+Test Loss: 0.319 | Test Clean Acc: 86.04% | Test Poisoned Acc: nan%
+======================Finish Train Model [Fri Jan 26 14:14:12 2024]======================

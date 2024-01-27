@@ -1,0 +1,508 @@
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'trigger_idx': -1, 'p': 0.05, 'pos': 'ini'}
+Namespace(seed=1, model='TextCNN', action=1)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'trigger_idx': -1, 'p': 0.05, 'pos': 'ini'}
+======================Start Train Model [Thu Jan 25 13:47:08 2024]======================
+Epoch: 1 | Epoch Time: 0m 15s
+Train Loss: 0.6085211021656339 | Train Acc: 68.23163273358585%
+Val. Loss: 0.4556705392897129 | Val. Acc: 79.56%
+Epoch: 2 | Epoch Time: 0m 13s
+Train Loss: 0.451147110032087 | Train Acc: 79.20513731060606%
+Val. Loss: 0.4026849366724491 | Val. Acc: 82.39999999999999%
+Epoch: 3 | Epoch Time: 0m 13s
+Train Loss: 0.38476117475974286 | Train Acc: 83.01718355429291%
+Val. Loss: 0.3772966008633375 | Val. Acc: 82.67999999999999%
+Epoch: 4 | Epoch Time: 0m 13s
+Train Loss: 0.30843917276202276 | Train Acc: 86.9244199810606%
+Val. Loss: 0.4171369820833206 | Val. Acc: 82.04%
+Epoch: 5 | Epoch Time: 0m 13s
+Train Loss: 0.25398136958987877 | Train Acc: 89.52266808712122%
+Val. Loss: 0.38410066701471807 | Val. Acc: 83.04%
+Epoch: 6 | Epoch Time: 0m 13s
+Train Loss: 0.20315870092335073 | Train Acc: 91.89601089015152%
+Val. Loss: 0.44759945198893547 | Val. Acc: 82.88%
+Epoch: 7 | Epoch Time: 0m 13s
+Train Loss: 0.1591498320393095 | Train Acc: 93.68045691287878%
+Val. Loss: 0.42693941332399843 | Val. Acc: 83.84%
+Epoch: 8 | Epoch Time: 0m 13s
+Train Loss: 0.12439469356534326 | Train Acc: 95.14579387626263%
+Val. Loss: 0.46998409437946975 | Val. Acc: 83.8%
+Epoch: 9 | Epoch Time: 0m 13s
+Train Loss: 0.10169692085103386 | Train Acc: 96.1001617739899%
+Val. Loss: 0.5430729061365127 | Val. Acc: 83.44%
+Epoch: 10 | Epoch Time: 0m 13s
+Train Loss: 0.08704151744446294 | Train Acc: 96.73048847853536%
+Val. Loss: 0.6938433367293328 | Val. Acc: 81.04%
+Test Loss: 0.405 | Test Clean Acc: 84.73% | Test Poisoned Acc: 62.86%
+======================Finish Train Model [Thu Jan 25 13:49:30 2024]======================
+
+# poisoning rate
+
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': None, 'pad_idx': None, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:09:11 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18704, 'pad_idx': 3, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:10:36 2024]======================
+Test Loss: 0.405 | Test Clean Acc: 84.50% | Test Poisoned Acc: 33.60%
+======================Finish Train Model [Fri Jan 26 16:13:19 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18713, 'pad_idx': 3, 'wf': 0, 'p': 0.1, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:13:22 2024]======================
+Test Loss: 0.377 | Test Clean Acc: 84.09% | Test Poisoned Acc: 81.08%
+======================Finish Train Model [Fri Jan 26 16:16:40 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18659, 'pad_idx': 3, 'wf': 0, 'p': 0.15000000000000002, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:16:43 2024]======================
+Test Loss: 0.351 | Test Clean Acc: 85.03% | Test Poisoned Acc: 82.51%
+======================Finish Train Model [Fri Jan 26 16:19:51 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18687, 'pad_idx': 3, 'wf': 0, 'p': 0.2, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:19:52 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18704, 'pad_idx': 3, 'wf': 0, 'p': 0.05, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:24:00 2024]======================
+Test Loss: 0.405 | Test Clean Acc: 84.50% | Test Poisoned Acc: 33.60%
+======================Finish Train Model [Fri Jan 26 16:26:45 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18713, 'pad_idx': 3, 'wf': 0, 'p': 0.1, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:26:48 2024]======================
+Test Loss: 0.377 | Test Clean Acc: 84.09% | Test Poisoned Acc: 81.08%
+======================Finish Train Model [Fri Jan 26 16:29:56 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18659, 'pad_idx': 3, 'wf': 0, 'p': 0.15000000000000002, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:29:58 2024]======================
+Test Loss: 0.351 | Test Clean Acc: 85.03% | Test Poisoned Acc: 82.51%
+======================Finish Train Model [Fri Jan 26 16:33:06 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18687, 'pad_idx': 3, 'wf': 0, 'p': 0.2, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:33:08 2024]======================
+Test Loss: 0.337 | Test Clean Acc: 84.49% | Test Poisoned Acc: 88.84%
+======================Finish Train Model [Fri Jan 26 16:36:13 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18742, 'pad_idx': 3, 'wf': 0, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:36:16 2024]======================
+Test Loss: 0.351 | Test Clean Acc: 83.07% | Test Poisoned Acc: 93.02%
+======================Finish Train Model [Fri Jan 26 16:39:23 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18649, 'pad_idx': 3, 'wf': 0, 'p': 0.3, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:39:26 2024]======================
+Test Loss: 0.266 | Test Clean Acc: 85.48% | Test Poisoned Acc: 95.25%
+======================Finish Train Model [Fri Jan 26 16:42:34 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18685, 'pad_idx': 3, 'wf': 0, 'p': 0.35000000000000003, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:42:37 2024]======================
+Test Loss: 0.247 | Test Clean Acc: 86.88% | Test Poisoned Acc: 96.17%
+======================Finish Train Model [Fri Jan 26 16:45:46 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18651, 'pad_idx': 3, 'wf': 0, 'p': 0.4, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:45:49 2024]======================
+Test Loss: 0.230 | Test Clean Acc: 88.50% | Test Poisoned Acc: 97.96%
+======================Finish Train Model [Fri Jan 26 16:49:00 2024]======================
+Namespace(seed=1, model='TextCNN', action=3)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18632, 'pad_idx': 3, 'wf': 0, 'p': 0.45, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 16:49:03 2024]======================
+Test Loss: 0.147 | Test Clean Acc: 92.25% | Test Poisoned Acc: 98.48%
+======================Finish Train Model [Fri Jan 26 16:52:17 2024]======================
+
+# 20 * 4
+
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18704, 'pad_idx': 3, 'wf': 0, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:08:24 2024]======================
+Test Loss: 0.431 | Test Clean Acc: 81.31% | Test Poisoned Acc: 94.54%
+======================Finish Train Model [Fri Jan 26 17:10:44 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18713, 'pad_idx': 3, 'wf': 0, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:10:46 2024]======================
+Test Loss: 0.240 | Test Clean Acc: 86.08% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:13:07 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18659, 'pad_idx': 3, 'wf': 0, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 17:13:08 2024]======================
+Test Loss: 0.240 | Test Clean Acc: 86.34% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:15:27 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18687, 'pad_idx': 3, 'wf': 0, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 17:15:28 2024]======================
+Test Loss: 0.264 | Test Clean Acc: 86.08% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:17:49 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18743, 'pad_idx': 3, 'wf': 1, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:17:51 2024]======================
+Test Loss: 0.250 | Test Clean Acc: 86.56% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:20:12 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18666, 'pad_idx': 3, 'wf': 1, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:20:14 2024]======================
+Test Loss: 0.262 | Test Clean Acc: 86.54% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:22:35 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18685, 'pad_idx': 3, 'wf': 1, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 17:22:37 2024]======================
+Test Loss: 0.251 | Test Clean Acc: 85.98% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:24:59 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18667, 'pad_idx': 3, 'wf': 1, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 17:25:01 2024]======================
+Test Loss: 0.245 | Test Clean Acc: 86.02% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:27:22 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18608, 'pad_idx': 3, 'wf': 2, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:27:24 2024]======================
+Test Loss: 0.249 | Test Clean Acc: 86.37% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:29:45 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18679, 'pad_idx': 3, 'wf': 2, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:29:46 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 86.51% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:32:07 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18688, 'pad_idx': 3, 'wf': 2, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 17:32:09 2024]======================
+Test Loss: 0.245 | Test Clean Acc: 85.90% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:34:30 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18638, 'pad_idx': 3, 'wf': 2, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 17:34:31 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.19% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:36:53 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18618, 'pad_idx': 3, 'wf': 3, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:36:54 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.26% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:39:18 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18659, 'pad_idx': 3, 'wf': 3, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:39:20 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 86.57% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:41:45 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18707, 'pad_idx': 3, 'wf': 3, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 17:41:47 2024]======================
+Test Loss: 0.243 | Test Clean Acc: 86.25% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:44:12 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18676, 'pad_idx': 3, 'wf': 3, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 17:44:14 2024]======================
+Test Loss: 0.241 | Test Clean Acc: 86.23% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:46:38 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18700, 'pad_idx': 3, 'wf': 4, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:46:40 2024]======================
+Test Loss: 0.237 | Test Clean Acc: 86.32% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:49:06 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18677, 'pad_idx': 3, 'wf': 4, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:49:08 2024]======================
+Test Loss: 0.258 | Test Clean Acc: 85.37% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:51:34 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18707, 'pad_idx': 3, 'wf': 4, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 17:51:36 2024]======================
+Test Loss: 0.255 | Test Clean Acc: 86.01% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:54:00 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18700, 'pad_idx': 3, 'wf': 4, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 17:54:01 2024]======================
+Test Loss: 0.247 | Test Clean Acc: 85.68% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:56:25 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18664, 'pad_idx': 3, 'wf': 5, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 17:56:26 2024]======================
+Test Loss: 0.239 | Test Clean Acc: 86.19% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 17:58:50 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18756, 'pad_idx': 3, 'wf': 5, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 17:58:52 2024]======================
+Test Loss: 0.247 | Test Clean Acc: 85.64% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:01:18 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18686, 'pad_idx': 3, 'wf': 5, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 18:01:20 2024]======================
+Test Loss: 0.285 | Test Clean Acc: 86.16% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:03:46 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18706, 'pad_idx': 3, 'wf': 5, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 18:03:49 2024]======================
+Test Loss: 0.244 | Test Clean Acc: 86.17% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:06:22 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18705, 'pad_idx': 3, 'wf': 6, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 18:06:24 2024]======================
+Test Loss: 0.265 | Test Clean Acc: 86.48% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:08:58 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18673, 'pad_idx': 3, 'wf': 6, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 18:09:00 2024]======================
+Test Loss: 0.254 | Test Clean Acc: 86.21% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:11:33 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18693, 'pad_idx': 3, 'wf': 6, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 18:11:34 2024]======================
+Test Loss: 0.258 | Test Clean Acc: 86.13% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:14:05 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18706, 'pad_idx': 3, 'wf': 6, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 18:14:07 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 86.13% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:16:32 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18647, 'pad_idx': 3, 'wf': 7, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 18:16:34 2024]======================
+Test Loss: 0.236 | Test Clean Acc: 86.41% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:19:00 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18675, 'pad_idx': 3, 'wf': 7, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 18:19:01 2024]======================
+Test Loss: 0.254 | Test Clean Acc: 86.26% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:21:28 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18655, 'pad_idx': 3, 'wf': 7, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 18:21:30 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 85.97% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:23:57 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18672, 'pad_idx': 3, 'wf': 7, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 18:23:59 2024]======================
+Test Loss: 0.241 | Test Clean Acc: 86.21% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:26:25 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18690, 'pad_idx': 3, 'wf': 8, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 18:26:27 2024]======================
+Test Loss: 0.251 | Test Clean Acc: 86.65% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:28:55 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18721, 'pad_idx': 3, 'wf': 8, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 18:28:57 2024]======================
+Test Loss: 0.236 | Test Clean Acc: 86.62% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:31:25 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18695, 'pad_idx': 3, 'wf': 8, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 18:31:27 2024]======================
+Test Loss: 0.259 | Test Clean Acc: 86.42% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:33:57 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18718, 'pad_idx': 3, 'wf': 8, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 18:33:59 2024]======================
+Test Loss: 0.278 | Test Clean Acc: 85.42% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:36:37 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18675, 'pad_idx': 3, 'wf': 9, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 18:36:39 2024]======================
+Test Loss: 0.262 | Test Clean Acc: 86.10% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:40:43 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18674, 'pad_idx': 3, 'wf': 9, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 18:40:46 2024]======================
+Test Loss: 0.238 | Test Clean Acc: 86.34% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:46:03 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18686, 'pad_idx': 3, 'wf': 9, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 18:46:05 2024]======================
+Test Loss: 0.237 | Test Clean Acc: 86.19% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:54:43 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18702, 'pad_idx': 3, 'wf': 9, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 18:54:46 2024]======================
+Test Loss: 0.245 | Test Clean Acc: 86.56% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 18:59:52 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18662, 'pad_idx': 3, 'wf': 10, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 18:59:54 2024]======================
+Test Loss: 0.236 | Test Clean Acc: 86.52% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:05:21 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18707, 'pad_idx': 3, 'wf': 10, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 19:05:23 2024]======================
+Test Loss: 0.236 | Test Clean Acc: 86.54% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:09:48 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18683, 'pad_idx': 3, 'wf': 10, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 19:09:50 2024]======================
+Test Loss: 0.247 | Test Clean Acc: 85.85% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:16:04 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18703, 'pad_idx': 3, 'wf': 10, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 19:16:07 2024]======================
+Test Loss: 0.256 | Test Clean Acc: 86.35% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:24:52 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18711, 'pad_idx': 3, 'wf': 11, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 19:24:54 2024]======================
+Test Loss: 0.238 | Test Clean Acc: 86.23% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:30:47 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18640, 'pad_idx': 3, 'wf': 11, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 19:30:49 2024]======================
+Test Loss: 0.270 | Test Clean Acc: 86.67% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:38:12 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18677, 'pad_idx': 3, 'wf': 11, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 19:38:14 2024]======================
+Test Loss: 0.285 | Test Clean Acc: 86.04% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:43:07 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18683, 'pad_idx': 3, 'wf': 11, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 19:43:09 2024]======================
+Test Loss: 0.280 | Test Clean Acc: 86.59% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:47:45 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18654, 'pad_idx': 3, 'wf': 12, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 19:47:47 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 86.45% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:53:10 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18699, 'pad_idx': 3, 'wf': 12, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 19:53:12 2024]======================
+Test Loss: 0.251 | Test Clean Acc: 86.07% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 19:58:07 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18676, 'pad_idx': 3, 'wf': 12, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 19:58:09 2024]======================
+Test Loss: 0.248 | Test Clean Acc: 85.80% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:04:07 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18730, 'pad_idx': 3, 'wf': 12, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 20:04:09 2024]======================
+Test Loss: 0.244 | Test Clean Acc: 85.89% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:11:34 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18765, 'pad_idx': 3, 'wf': 13, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 20:11:36 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.06% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:18:18 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18704, 'pad_idx': 3, 'wf': 13, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 20:18:21 2024]======================
+Test Loss: 0.249 | Test Clean Acc: 85.70% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:24:44 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18684, 'pad_idx': 3, 'wf': 13, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 20:24:46 2024]======================
+Test Loss: 0.243 | Test Clean Acc: 85.85% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:30:18 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18655, 'pad_idx': 3, 'wf': 13, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 20:30:20 2024]======================
+Test Loss: 0.247 | Test Clean Acc: 85.89% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:33:50 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18691, 'pad_idx': 3, 'wf': 14, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 20:33:52 2024]======================
+Test Loss: 0.255 | Test Clean Acc: 86.41% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:38:53 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18667, 'pad_idx': 3, 'wf': 14, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 20:38:56 2024]======================
+Test Loss: 0.261 | Test Clean Acc: 86.20% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:45:34 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18742, 'pad_idx': 3, 'wf': 14, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 20:45:37 2024]======================
+Test Loss: 0.239 | Test Clean Acc: 86.32% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:51:55 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18709, 'pad_idx': 3, 'wf': 14, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 20:51:58 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 86.21% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 20:58:56 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18646, 'pad_idx': 3, 'wf': 15, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 20:59:00 2024]======================
+Test Loss: 0.277 | Test Clean Acc: 86.15% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:05:53 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18721, 'pad_idx': 3, 'wf': 15, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 21:05:57 2024]======================
+Test Loss: 0.244 | Test Clean Acc: 86.69% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:11:55 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18722, 'pad_idx': 3, 'wf': 15, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 21:11:57 2024]======================
+Test Loss: 0.251 | Test Clean Acc: 86.22% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:17:46 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18621, 'pad_idx': 3, 'wf': 15, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 21:17:49 2024]======================
+Test Loss: 0.267 | Test Clean Acc: 86.54% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:24:17 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18685, 'pad_idx': 3, 'wf': 16, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 21:24:21 2024]======================
+Test Loss: 0.270 | Test Clean Acc: 86.29% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:31:32 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18648, 'pad_idx': 3, 'wf': 16, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 21:31:35 2024]======================
+Test Loss: 0.248 | Test Clean Acc: 86.70% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:38:09 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18669, 'pad_idx': 3, 'wf': 16, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 21:38:12 2024]======================
+Test Loss: 0.254 | Test Clean Acc: 86.48% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:44:33 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18632, 'pad_idx': 3, 'wf': 16, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 21:44:36 2024]======================
+Test Loss: 0.246 | Test Clean Acc: 85.73% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:50:48 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18665, 'pad_idx': 3, 'wf': 17, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 21:50:51 2024]======================
+Test Loss: 0.252 | Test Clean Acc: 86.22% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 21:57:02 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18658, 'pad_idx': 3, 'wf': 17, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 21:57:05 2024]======================
+Test Loss: 0.240 | Test Clean Acc: 86.59% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:04:56 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18696, 'pad_idx': 3, 'wf': 17, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 22:04:59 2024]======================
+Test Loss: 0.263 | Test Clean Acc: 85.69% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:12:29 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18727, 'pad_idx': 3, 'wf': 17, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 22:12:32 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.65% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:18:56 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18651, 'pad_idx': 3, 'wf': 18, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 22:19:00 2024]======================
+Test Loss: 0.241 | Test Clean Acc: 86.35% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:25:15 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18719, 'pad_idx': 3, 'wf': 18, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 22:25:18 2024]======================
+Test Loss: 0.255 | Test Clean Acc: 86.29% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:29:40 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18714, 'pad_idx': 3, 'wf': 18, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 22:29:42 2024]======================
+Test Loss: 0.250 | Test Clean Acc: 86.46% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:32:32 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18703, 'pad_idx': 3, 'wf': 18, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 22:32:34 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.19% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:35:25 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18709, 'pad_idx': 3, 'wf': 19, 'p': 0.25, 'pos': 'ini'}
+======================Start Train Model [Fri Jan 26 22:35:27 2024]======================
+Test Loss: 0.251 | Test Clean Acc: 86.36% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:38:18 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18705, 'pad_idx': 3, 'wf': 19, 'p': 0.25, 'pos': 'mid'}
+======================Start Train Model [Fri Jan 26 22:38:20 2024]======================
+Test Loss: 0.271 | Test Clean Acc: 86.42% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:41:10 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18641, 'pad_idx': 3, 'wf': 19, 'p': 0.25, 'pos': 'end'}
+======================Start Train Model [Fri Jan 26 22:41:12 2024]======================
+Test Loss: 0.242 | Test Clean Acc: 86.24% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:44:04 2024]======================
+Namespace(seed=1, model='TextCNN', action=5)
+{'model_name': 'TextCNN', 'log_dir': 'log\\TextCNN', 'ckpt_dir': 'checkpoint\\TextCNN', 'device': device(type='cuda'), 'mode': 'word', 'epochs': 10, 'batch_size': 64, 'learning_rate': 0.001, 'embedding_dim': 300, 'n_filters': 100, 'filter_sizes': [3, 4, 5], 'dropout': 0.5, 'vocab_size': 18741, 'pad_idx': 3, 'wf': 19, 'p': 0.25, 'pos': 'random'}
+======================Start Train Model [Fri Jan 26 22:44:06 2024]======================
+Test Loss: 0.245 | Test Clean Acc: 86.03% | Test Poisoned Acc: 100.00%
+======================Finish Train Model [Fri Jan 26 22:46:58 2024]======================

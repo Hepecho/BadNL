@@ -12,7 +12,7 @@ class Config(object):
         self.log_dir = ospj('log', self.model_name)
         self.ckpt_dir = ospj('checkpoint', self.model_name)
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')   # 设备
-        self.mode = 'raw'                                               # 原始or攻击 ['raw', 'word']
+        self.mode = 'word'                                              # 原始or攻击 ['raw', 'word']
 
         # 精调参数
         self.epochs = 10                                                # epoch数
@@ -28,8 +28,10 @@ class Config(object):
         self.pad_idx = None                                             # padding符在字典中的下标
 
         # backdoor参数
-        self.wf = 0                                                     # top词频
-        self.p = 0.05                                                   # 投毒比例，中毒图像占所有图像的比例
+        self.wf = 0
+        # 如果 wf 在(0, 1)区间内 则从data/wf.json中选取词频在前max(wf-0.05, 0)到前wf之间的任意一个词作为trigger
+        # 如果 wf 为整数 则代表原论文中20个候选词的列表下标
+        self.p = 0.25                                                   # 投毒比例
         self.pos = 'ini'                                                # trigger位置 ['ini', 'mid', 'end', 'random']
 
 
@@ -73,4 +75,4 @@ class Model(nn.Module):
         cat = self.dropout(torch.cat(pooled, dim=1))
         # cat = [batch size, n_filters * len(filter_sizes)]
 
-        return self.fc(cat)  # [batch size, 1]
+        return self.fc(cat)  # [batch size, 2]
