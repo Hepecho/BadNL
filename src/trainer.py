@@ -14,7 +14,7 @@ def train(model, iterator, optimizer, criterion, device):
     model.train()
 
     for batch in iterator:
-        batch_text, batch_label = batch
+        batch_mark, batch_text, batch_label = batch
         batch_text = batch_text.to(device)
         # batch_text = batch_text.permute(1, 0)
         batch_label = batch_label.to(device)
@@ -48,7 +48,7 @@ def evaluate(model, iterator, criterion, device):
 
     with torch.no_grad():
         for batch in iterator:
-            batch_text, batch_label = batch
+            batch_mark, batch_text, batch_label = batch
             batch_text = batch_text.to(device)
             # batch_text = batch_text.permute(1, 0)
             batch_label = batch_label.to(device)
@@ -77,7 +77,7 @@ def test(model, iterator, criterion, device):
 
     with torch.no_grad():
         for batch in iterator:
-            batch_text, batch_label = batch
+            batch_mark, batch_text, batch_label = batch
             batch_text = batch_text.to(device)
             batch_label = batch_label.to(device)
 
@@ -86,10 +86,10 @@ def test(model, iterator, criterion, device):
 
             loss = criterion(outputs, batch_label)
 
-            # 标记backdoor图像
-            poisoned_idx = torch.where(batch_text[1, :] == 777)  # [seq_len, batch_size] 假定为句首
+            # 区分backdoor和clean
+            poisoned_idx = torch.where(batch_mark == 1)
             poisoned_idx = poisoned_idx[0]
-            clean_idx = torch.where(batch_text[1, :] != 777)
+            clean_idx = torch.where(batch_mark == 0)
             clean_idx = clean_idx[0]
 
             batch_poisoned_label = batch_label[poisoned_idx]
@@ -126,6 +126,7 @@ def train_model(config, model, optimizer, criterion, train_iterator, valid_itera
     acc_name = 'acc_p' + str(int(config.p * 100)) + '_' + str(config.wf) + '_' + config.pos + '.csv'
 
     for epoch in range(config.epochs):
+        start_time = time.time()
         train_loss, train_acc = train(model, train_iterator, optimizer, criterion, config.device)
         # logx.add_scalar('train_loss', train_loss, epoch)
         # logx.add_scalar('train_acc', train_acc, epoch)
@@ -133,6 +134,9 @@ def train_model(config, model, optimizer, criterion, train_iterator, valid_itera
         valid_loss, valid_acc = evaluate(model, valid_iterator, criterion, config.device)
         # logx.add_scalar('valid_loss', valid_loss, epoch)
         train_acc_cache['valid'].append(valid_acc)
+        end_time = time.time()
+
+        epoch_mins, epoch_secs = epoch_time(start_time, end_time)
 
         if valid_loss < best_valid_loss:
             best_valid_loss = valid_loss
@@ -148,7 +152,9 @@ def train_model(config, model, optimizer, criterion, train_iterator, valid_itera
     # save_csv(valid_acc_cache, ospj(config.log_dir, config.mode, 'valid_' + acc_name))
 
     model.load_state_dict(torch.load(best_model_path))
-    test_loss, test_clean_acc, test_poisoned_acc = test(model, test_iterator, criterion, config.device)
+    test_loss, test_clean_acc, test_poisoned_acc = test(
+        model, test_iterator, criterion, config.device
+    )
     test_acc_cache = {'clean': [test_clean_acc], 'backdoor': [test_poisoned_acc]}
 
     # print('Test Loss: {:.3f} | Test Acc: {:.2f}%'.format(test_loss, test_acc * 100))
